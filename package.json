@@ -1,5 +1,6 @@
 {
-  "name": "nexa-cra",
+  "homepage": "https://nexacurahealthcare.com",
+  "name": "nexacura-healthcare-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
