@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.nexacurahealthcare.app",
+      "sha256_cert_fingerprints": [
+        "C9:4D:49:5D:6B:E1:F6:F5:05:01:AF:1B:22:1C:7B:5A:57:7B:21:C9:0B:3E:2C:F7:0E:1B:C5:1A:AB:E6:BB:D8"
+      ]
+    }
+  }
+]
