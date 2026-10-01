@@ -6,6 +6,7 @@ import { ApproachPage } from "pages/ApproachPage";
 import { SolutionsPage } from "pages/SolutionsPage";
 import { StoryPage } from "pages/StoryPage";
 import { ContactPage } from "pages/ContactPage";
+import { ScrollToTop } from "./components/scroll-to-top";
 
 const titles: Record<string, string> = {
   "/": "NexaCura Healthcare — Physiological Intelligence System",
@@ -28,6 +29,7 @@ export default function App() {
     <BrowserRouter>
       <DocumentTitle />
       <SiteShell>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/approach" element={<ApproachPage />} />

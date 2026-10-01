@@ -71,25 +71,24 @@ export function EarlyAccessForm({
 
       const timeData = await timeResponse.json();
 
-      // Convert Unix seconds to milliseconds and add 5 minutes
-      const timestamp = timeData.unixtime * 1000;
+      // Time Unix seconds
+      const timestamp = timeData.unixtime;
 
       // Use the same secret provided by the backend/API team
-      const secret = "kjsdh#$nHj@5368(<>yqwu126";
+      const secret = "ds6789ab2#$%^&;'jjhdja*";
 
       // Generate HMAC SHA256 signature
       const signature = CryptoJS.HmacSHA256(
         timestamp.toString(),
         secret
-      ).toString();
+      ).toString(CryptoJS.enc.Hex);
 
       // Send submission to Google Apps Script API
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzv0RMj4zRQj8oV5Y5_Caz8xwpz5NsQ7ulC6gCUb9y_fVZTVv1_NaMSE7caUXytBKdgeg/exec",
+        "https://script.google.com/macros/s/AKfycbywWZ0q9B9NgHFUxXbPbWQsKp0NwfYQL4ou6oIjrd6rdzu-Q5gAmLT311H_jjfNbeImwg/exec",
         {
           method: "POST",
           headers: {
-            // "Content-Type": "application/json",
             "Content-Type": "text/plain;charset=utf-8",
           },
           body: JSON.stringify({
