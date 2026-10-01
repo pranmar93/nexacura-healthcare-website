@@ -85,7 +85,7 @@ export function EarlyAccessForm({
 
       // Send submission to Google Apps Script API
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbyI_SQoz-hf_nbahHfeUFKeYdShwHdiyiFugHut2O8TDqBIamI8GyQ1avJw8Wa7RLCFIw/exec",
+        "https://script.google.com/macros/s/AKfycbzv0RMj4zRQj8oV5Y5_Caz8xwpz5NsQ7ulC6gCUb9y_fVZTVv1_NaMSE7caUXytBKdgeg/exec",
         {
           method: "POST",
           headers: {
